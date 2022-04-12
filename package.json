@@ -1,0 +1,44 @@
+{
+  "name": "yap-client",
+  "version": "0.0.1",
+  "description": "YAP - Yet Another Parser - Hebrew NLP JavaScript/TypeScript Client",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/index.js\"",
+    "lint": "eslint . --fix --ext .ts",
+    "test": "jest",
+    "build": "tsc -b",
+    "prepublish": "npm run build",
+    "publish": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnlp-il/yap-js-client.git"
+  },
+  "keywords": [
+    "YAP",
+    "NLP",
+    "Hebrew"
+  ],
+  "author": "NNLP-IL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nnlp-il/yap-js-client/issues"
+  },
+  "homepage": "https://github.com/nnlp-il/yap-js-client#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "eslint": "^8.13.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}

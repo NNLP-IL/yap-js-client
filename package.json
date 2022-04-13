@@ -1,6 +1,6 @@
 {
-  "name": "yap-client",
-  "version": "0.0.1",
+  "name": "@nnlp-il/yap-js-client",
+  "version": "0.0.3",
   "description": "YAP - Yet Another Parser - Hebrew NLP JavaScript/TypeScript Client",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,7 @@
     "test": "jest",
     "build": "tsc -b",
     "prepublish": "npm run build",
-    "publish": "npm publish"
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",

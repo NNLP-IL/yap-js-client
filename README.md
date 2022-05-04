@@ -7,7 +7,7 @@ YAP was implemented to test the hypothesis on Joint Morpho-Syntactic Processing 
 
 ## How to use
 
-* [Run YAP](https://github.com/onlplab/yap/) and  it via API (can run also via [Docker](https://hub.docker.com/repository/docker/roiwebiks/yap_api_2022))
+* [Run YAP](https://github.com/onlplab/yap/) and  it via API (can run also via Docker)
 * [Install](#install) the YAP Client
 * [Use](Usage) The YAP Client Feature
 ## Install
@@ -15,6 +15,13 @@ YAP was implemented to test the hypothesis on Joint Morpho-Syntactic Processing 
 ```bash
 npm i @nnlp-il/yap-js-client
 ```
+
+### Running YAP 
+The best way to run YAP is by Docker
+
+```docker
+docker run --name yap --restart always -d -p 8000:8000 public.ecr.aws/u8w1h2d8/nlp_yap_api:latest
+````
 
 ## Usage
 
